@@ -16,8 +16,8 @@
     text-align: center;
     font-size: medium;
     .flex-item {
-      width: 765px;
-      height: 460px;
+      width: 450px;
+      height: 220px;
       position: relative;
     }
 
@@ -51,38 +51,37 @@
       background-color: $green-A200;
       color: $white;
       border-color: $green-A200;
-      height: 90px;
-      width: 90px;
+      height: 60px;
+      width: 60px;
       border-radius: 45px;
     }
 
     .check_circle {
-      display: inline-flex;
+      display: inline;
       vertical-align: middle;
       text-align: center;
-      height: 90px;
-      width: 90px;
-      font-size: 89px;
+      height: 60px;
+      width: 60px;
+      font-size: 60px;
     }
 
     .txt-cap {
-      margin: 70px auto;
+      margin: 50px auto 30px auto;
       font-weight: 700;
 
     }
     .txt-des {
-      margin: 10px 10px 70px 10px;
+      margin: 10px;
       white-space: pre-line;
       color: $grey-600;
       font-weight: 500;
-
     }
 
     .semi_circle {
-      height: 45px;
-      width: 90px;
+      height: 30px;
+      width: 60px;
       background: $white;
-      margin-left: 47%;
+      margin-left: 50%;
       border-top-left-radius: 45px;
       border-top-right-radius: 45px;
 

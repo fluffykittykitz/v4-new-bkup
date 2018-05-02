@@ -1,7 +1,7 @@
 .successPage {
   font-family: 'Rubik ', sans-serif;
   font-weight: 500;
-  margin:10%;
+  margin: 10%;
   align-content: center;
 
   .container {
@@ -15,70 +15,79 @@
     @include align-self(center);
     text-align: center;
     font-size: medium;
+    .flex-item {
+      width: 765px;
+      height: 460px;
+      position: relative;
+    }
 
   }
-
-  .btn-continue {
+  .btn-holder {
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    background-color: $active-color--state;
-    color: $white;
-    margin-top: 20px;
-    border: 0;
-    padding: 10px 5px;
-    font-weight: 700;
 
-    &:active, &:focus, &:visited, &:active:focus, &:hover {
-      outline: none;
-      background-color: $green-A200;
+    .btn-continue {
+      width: 100%;
+      background-color: $active-color--state;
       color: $white;
+      margin-top: 20px;
+      border: 0;
+      padding: 10px 5px;
+      font-weight: 700;
+
+      &:active, &:focus, &:visited, &:active:focus, &:hover {
+        outline: none;
+        background-color: $green-A200;
+        color: $white;
+      }
     }
   }
+    .chck-icon {
+      margin: 0;
+      vertical-align: center;
+      display: inline-block;
+      text-align: center;
+      background-color: $green-A200;
+      color: $white;
+      border-color: $green-A200;
+      height: 90px;
+      width: 90px;
+      border-radius: 45px;
+    }
 
-  .chck-icon {
-    margin:0;
-    vertical-align: center;
-    display: inline-block;
-    text-align: center;
-    background-color: $green-A200;
-    color: $white;
-    border-color: $green-A200;
-    height: 90px;
-    width: 90px;
-    border-radius: 45px;
+    .check_circle {
+      display: inline-flex;
+      vertical-align: middle;
+      text-align: center;
+      height: 90px;
+      width: 90px;
+      font-size: 89px;
+    }
+
+    .txt-cap {
+      margin: 70px auto;
+      font-weight: 700;
+
+    }
+    .txt-des {
+      margin: 10px 10px 70px 10px;
+      white-space: pre-line;
+      color: $grey-600;
+      font-weight: 500;
+
+    }
+
+    .semi_circle {
+      height: 45px;
+      width: 90px;
+      background: $white;
+      margin-left: 47%;
+      border-top-left-radius: 45px;
+      border-top-right-radius: 45px;
+
+    }
+
   }
 
-  .check_circle{
-    display:inline-flex;
-    vertical-align: middle;
-    text-align: center;
-    height: 90px;
-    width: 90px;
-    font-size: 89px;
-  }
-
-  .txt-cap {
-    margin: 70px auto;
-    font-weight: 700;
-
-  }
-  .txt-des {
-    margin: 10px 10px 70px 10px;
-    white-space: pre-line;
-    color: $grey-600;
-    font-weight: 500;
-
-  }
-
-
-  .semi_circle {
-    height: 45px;
-    width: 90px;
-    background: $white;
-    margin-left: 47%;
-    border-top-left-radius: 45px;
-    border-top-right-radius: 45px;
-
-  }
-
-}
 
